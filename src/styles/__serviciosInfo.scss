@@ -1,0 +1,50 @@
+@use "_variables";
+
+.component-services {
+  * {
+    font-family: variables.$fontPoppins;
+    color: #9f1f5e;
+  }
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin: 0.3em 0 0 8em;
+
+  .nameServices {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 0.3em;
+  }
+  .container-img {
+    width: 1.1em;
+    margin-right: 0.3em;
+    img {
+      margin-top: 0.05em;
+      width: 100%;
+    }
+  }
+  .namePage {
+    font-size: 0.9em;
+    color: #292067;
+  }
+}
+
+@media (max-width: 992px) {
+  .component-services {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .component-services {
+    font-size: 11px;
+    margin: 0.3em 0 0 5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .component-services {
+    font-size: 11px;
+    margin: 0.3em 0 0 3em;
+  }
+}

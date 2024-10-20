@@ -1,0 +1,353 @@
+@use "_variables";
+
+.component-procesoAudiencia {
+  * {
+    font-family: variables.$fontPoppins;
+    color: #616161;
+  }
+  font-size: 16px;
+  margin: auto;
+  padding: 4em 0;
+
+  .container {
+    position: relative;
+
+    .container-cuadros-up {
+      display: flex;
+      justify-content: center;
+      .container-card-conomientos {
+        width: 19em;
+        box-shadow: 10px 10px 28px 8px rgba(154, 154, 154, 1);
+        border-radius: 2em;
+        position: relative;
+        padding: 1.5em;
+        height: 19em;
+        margin-right: 5em;
+        .img-numero1 {
+          position: absolute;
+          top: 0em;
+          left: 0em;
+          width: 5em;
+        }
+        .container-info {
+          border: 0.1em solid #b1b1b1;
+          border-radius: 1em;
+          .container-text {
+            padding: 0 1.2em 0 3.5em;
+            h2 {
+              color: #1455cb;
+              font-size: 1.2em;
+              margin-top: 0.8em;
+            }
+            p {
+              font-size: 0.7em;
+              text-align: justify;
+              margin-top: 1em;
+              line-height: 1.2em;
+            }
+          }
+
+          .container-img {
+            margin: 2.5em 0 1em 1em;
+            width: 3.5em;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .container-card-conformacion {
+        width: 19em;
+        box-shadow: 10px 10px 28px 8px rgba(154, 154, 154, 1);
+        border-radius: 2em;
+        position: relative;
+        padding: 1.5em;
+        height: 19em;
+        .img-numero2 {
+          position: absolute;
+          top: 0em;
+          right: 0em;
+          width: 5em;
+        }
+        .container-info {
+          border: 0.1em solid #b1b1b1;
+          border-radius: 1em;
+          display: flex;
+          flex-direction: column;
+          .container-text {
+            padding: 0 3.5em 0 1.2em;
+            h2 {
+              color: #692060;
+              font-size: 1.2em;
+              margin-top: 0.8em;
+            }
+            p {
+              font-size: 0.7em;
+              text-align: justify;
+              margin-top: 1em;
+              line-height: 1.2em;
+            }
+          }
+
+          .container-img {
+            margin: 2.5em 1em 1em 0em;
+            width: 3.5em;
+            align-self: flex-end;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .container-cuadros-down {
+      display: flex;
+      justify-content: center;
+      margin-top: 5em;
+      .container-card-proceso {
+        width: 19em;
+        box-shadow: 10px 10px 28px 8px rgba(154, 154, 154, 1);
+        border-radius: 2em;
+        position: relative;
+        padding: 1.5em;
+        height: 19em;
+        margin-right: 5em;
+        .img-numero3 {
+          position: absolute;
+          bottom: 0em;
+          left: 0em;
+          width: 5em;
+        }
+        .container-info {
+          border: 0.1em solid #b1b1b1;
+          border-radius: 1em;
+          display: flex;
+          flex-direction: column-reverse;
+          .container-text {
+            padding: 0 0.8em 0em 2.5em;
+            h2 {
+              color: #692060;
+              font-size: 1.2em;
+            }
+            p {
+              font-size: 0.7em;
+              margin-top: 1em;
+              margin-bottom: 2em;
+              line-height: 1.2em;
+            }
+          }
+
+          .container-img {
+            margin: 1em 0em 3.1em 1em;
+            width: 4.5em;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .container-card-reporte {
+        width: 19em;
+        box-shadow: 10px 10px 28px 8px rgba(154, 154, 154, 1);
+        border-radius: 2em;
+        position: relative;
+        padding: 1.5em;
+        height: 19em;
+        .img-numero4 {
+          position: absolute;
+          bottom: 0em;
+          right: 0em;
+          width: 5em;
+        }
+        .container-info {
+          border: 0.1em solid #b1b1b1;
+          border-radius: 1em;
+          display: flex;
+          flex-direction: column-reverse;
+          .container-text {
+            padding: 0 2.5em 0em 0.8em;
+            h2 {
+              color: #1455cb;
+              font-size: 1.2em;
+            }
+            p {
+              font-size: 0.7em;
+              margin-top: 1em;
+              margin-bottom: 2em;
+              line-height: 1.2em;
+            }
+          }
+
+          .container-img {
+            margin: 1em 1em 3.5em 0em;
+            width: 3.5em;
+            align-self: flex-end;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .container-img-center {
+      width: 24em;
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      font-size: 2.2em;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .component-procesoAudiencia {
+    font-size: 11px;
+
+    .container {
+      .container-cuadros-down {
+        .container-card-proceso {
+          .container-info {
+            .container-img {
+              margin: 1em 0em 2em 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .component-procesoAudiencia {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .component-procesoAudiencia {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .component-procesoAudiencia {
+    font-size: 11px;
+
+    .container {
+      .container-cuadros-up {
+        .container-card-conomientos {
+          width: 42%;
+          .img-numero1 {
+            width: 4.5em;
+          }
+          .container-info {
+            .container-text {
+              padding: 0 1em 0 2em;
+            }
+
+            .container-img {
+              margin: 2.5em 0 1em 1em;
+              width: 3em;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .container-card-conformacion {
+          width: 42%;
+          .img-numero2 {
+            width: 4.5em;
+          }
+          .container-info {
+            .container-text {
+              padding: 0 2em 0 1em;
+            }
+
+            .container-img {
+              margin: 2.5em 0.5em 1em 1em;
+              width: 3em;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .container-cuadros-down {
+        margin-top: 5em;
+        .container-card-proceso {
+          width: 42%;
+          .img-numero3 {
+            width: 4.5em;
+          }
+          .container-info {
+            .container-img {
+              margin: 1em 0em 2em 1em;
+              width: 3em;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .container-card-reporte {
+          width: 42%;
+          .img-numero4 {
+            width: 4.5em;
+          }
+          .container-info {
+            .container-img {
+              margin: 1em 0.5em 2em 1em;
+              width: 3em;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .container-img-center {
+        width: 19em;
+        img {
+          width: 100%;
+        }
+      }
+      h1 {
+        font-size: 1.8em;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

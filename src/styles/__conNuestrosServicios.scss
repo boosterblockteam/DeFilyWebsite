@@ -1,0 +1,202 @@
+@use "_variables";
+
+.component-conNuestrosServicios {
+  * {
+    font-family: variables.$fontPoppins;
+    color: #d71c5a;
+  }
+  font-size: 16px;
+  text-align: center;
+  margin-top: 3.5em;
+  padding: 0 4em;
+
+  h1 {
+    color: #692060;
+    font-size: 2em;
+    padding: 0 1em;
+  }
+
+  .container-maps {
+    margin-top: 3em;
+    .container-map-up {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      .container-img-text-sinText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+        width: 22em;
+        width: 30%;
+        margin-bottom: 2em;
+        padding: 1em 0;
+        cursor: pointer;
+        height: 8em;
+        border-radius: 0.5em;
+        .img {
+          background: linear-gradient(
+            235deg,
+            #d71c5a 0%,
+            #9f1f5e 33.85%,
+            #692060 71.35%,
+            #292067 100%
+          );
+          width: 5.5em;
+          height: 5.5em;
+          border-radius: 5em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            fill: white;
+            width: 3em;
+          }
+        }
+        .title {
+          font-size: 1.3em;
+          font-weight: bold;
+          width: 50%;
+          line-height: 1.4em;
+          text-align: start;
+          margin-left: 1em;
+        }
+      }
+
+      .container-img-text-sinText:hover {
+        background: linear-gradient(
+          224deg,
+          #d71c5a 0%,
+          #9f1f5e 33.85%,
+          #692060 71.35%,
+          #292067 100%
+        );
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+        .img {
+          background: white;
+          svg {
+            fill: #9f1f5e;
+          }
+        }
+        .title {
+          color: white;
+        }
+      }
+
+      .container-img-text {
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        width: 30%;
+        margin-bottom: 2em;
+        height: 22em;
+        padding: 1em 1.5em 0em 1.5em;
+        border-radius: 0.5em;
+        .img {
+          background: linear-gradient(
+            235deg,
+            #d71c5a 0%,
+            #9f1f5e 33.85%,
+            #692060 71.35%,
+            #292067 100%
+          );
+          width: 5.5em;
+          height: 5.5em;
+          border-radius: 5em;
+          margin-bottom: 0.8em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            fill: white;
+            width: 3em;
+          }
+        }
+        .title {
+          font-size: 1.3em;
+          font-weight: bold;
+          line-height: 1.4em;
+        }
+        .description {
+          color: #9f1f5e;
+          text-align: justify;
+          font-size: 0.9em;
+          margin-top: 1.5em;
+          line-height: 1.4em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .component-conNuestrosServicios {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 992px) {
+  .component-conNuestrosServicios {
+    font-size: 11px;
+
+    .container-maps {
+      .container-map-up {
+        .container-img-text {
+          height: 25em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .component-conNuestrosServicios {
+    font-size: 11px;
+    padding: 0 1em;
+
+    .container-maps {
+      .container-map-up {
+        .container-img-text-sinText {
+          width: 45%;
+        }
+        .container-img-text {
+          height: 25em;
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .component-conNuestrosServicios {
+    font-size: 11px;
+
+    .container-maps {
+      .container-map-up {
+        .container-img-text-sinText {
+          width: 45%;
+
+          .img {
+            width: 4.5em;
+            height: 4.5em;
+          }
+
+          .title {
+            font-size: 1em;
+            width: 55%;
+            margin-left: 0.5em;
+          }
+        }
+        .container-img-text {
+          height: 32em;
+          width: 45%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@use "_variables";
+
+.component-bienvenidosAlUniverso {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+  font-size: 16px;
+
+  .container-text {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    h1 {
+      color: #692060;
+      font-size: 2em;
+      margin-bottom: 1em;
+
+      p {
+        color: #692060;
+        font-size: 0.8em;
+        font-weight: 400;
+      }
+    }
+    p {
+      color: #616161;
+      font-size: 1em;
+    }
+  }
+
+  .container-cards {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 0 1em;
+    .card {
+      background: linear-gradient(
+        135deg,
+        #d71c5a 0%,
+        #9f1f5e 33.85%,
+        #692060 71.35%,
+        #292067 100%
+      );
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+      width: 22em;
+      padding: 1em 0em;
+      height: auto;
+      margin-right: 1.5em;
+      .card-img-top {
+        width: 6em;
+        margin: auto;
+      }
+
+      .card-body {
+        text-align: center;
+        .card-title {
+          font-size: 1.4em;
+          font-weight: bold;
+        }
+        .card-text {
+          text-align: justify;
+          font-size: 1em;
+          margin: 1em 0em;
+          line-height: 1.3em;
+        }
+      }
+    }
+
+    .button {
+      border: 0.1em white solid;
+      border-radius: 1em;
+      background-color: transparent;
+      width: 7em;
+      padding: 0.5em 0;
+      margin: auto;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .component-bienvenidosAlUniverso {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .component-bienvenidosAlUniverso {
+    font-size: 11px;
+
+    .container-cards {
+      .card {
+        margin-bottom: 1.5em;
+        width: 19.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .component-bienvenidosAlUniverso {
+    font-size: 11px;
+    margin-top: 2em;
+
+    .container-text {
+      width: 95%;
+    }
+
+    .container-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .card {
+        margin-bottom: 1.5em;
+        margin-right: 0;
+        width: 25em;
+      }
+    }
+  }
+}

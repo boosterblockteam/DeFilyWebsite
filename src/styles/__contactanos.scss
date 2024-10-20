@@ -1,0 +1,173 @@
+@use "_variables";
+
+.component-contactanos {
+  * {
+    font-family: variables.$fontPoppins;
+    color: #616161;
+  }
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 6em 0;
+
+  .container-img {
+    width: 27em;
+    margin-right: 4em;
+    .container-text {
+      h2 {
+        color: #9f1f5e;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      p {
+        font-size: 0.82em;
+        text-align: justify;
+        margin-top: 1em;
+      }
+    }
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .container-info {
+    width: 35%;
+    margin-top: 0.8em;
+    h1 {
+      color: #292067;
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 0.8em;
+      margin-top: 1em;
+    }
+
+    .container-datos-contacto {
+      display: flex;
+      margin-top: 1em;
+
+      .container-img-data {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        img {
+          width: 1em;
+          margin-right: 0.3em;
+        }
+        span {
+          color: #1455cb;
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .container-form {
+      margin: auto;
+      margin-top: 1em;
+
+      input {
+        border-radius: 0.5em;
+        border: 0.1em solid #e3e3e3;
+        padding: 0.8em 1em;
+        font-size: 0.8em;
+        width: 48%;
+      }
+
+      .container-input-up {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .container-input-down {
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .container-textarea {
+        margin-top: 1em;
+        .textArea {
+          width: 100%;
+          border: 0.1em solid #e3e3e3;
+          padding: 0.5em 1em;
+          font-size: 0.8em;
+          height: 8.5em;
+        }
+        .description {
+          text-align: end;
+          font-size: 0.7em;
+          color: #aaaaaa;
+          margin-top: 0.5em;
+        }
+      }
+
+      .container-button {
+        button {
+          background: linear-gradient(
+            227deg,
+            #d71c5a 0%,
+            #9f1f5e 33.85%,
+            #692060 71.35%,
+            #292067 100%
+          );
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          border: none;
+          font-size: 0.9em;
+          color: white;
+          border-radius: 1em;
+          width: 100%;
+          padding: 0.65em 0em;
+          margin-top: 1em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .component-contactanos {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .component-contactanos {
+    font-size: 11px;
+
+    .container-img {
+      width: 24em;
+    }
+
+    .container-info {
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .component-contactanos {
+    font-size: 11px;
+    flex-direction: column;
+    align-items: center;
+
+    .container-img {
+      width: 90%;
+      margin-right: 0em;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 35%;
+      }
+    }
+
+    .container-info {
+      margin-top: 2.5em;
+      text-align: center;
+      width: 90%;
+    }
+  }
+}

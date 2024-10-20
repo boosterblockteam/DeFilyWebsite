@@ -1,0 +1,155 @@
+@use "_variables";
+
+.component-nuestros-services {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5em;
+
+  background-image: url("../assets/img/Bg_blue_home_.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  object-fit: cover;
+  padding: 9em 0em 13em 0em;
+
+  .title {
+    font-size: 2.5em;
+  }
+  .parrafo {
+    font-size: 1.05em;
+    margin-top: 1.5em;
+  }
+
+  .container-collage-img {
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+    .container-img-text {
+      margin-top: 2.5em;
+      width: 32%;
+      cursor: pointer;
+      padding: 8.5em 2em;
+      position: relative;
+      height: 20em;
+
+      .title-img {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      .text {
+        font-size: 1.1em;
+        line-height: 1.3em;
+        height: 100%;
+        padding: 0em 1.5em;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .--bgConsultoriaColor {
+        background-image: url("../assets/img/consultoriaRosado.png");
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 100% 100%;
+        object-fit: cover;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .--bgDesarrolloColor {
+        background-image: url("../assets/img/desarrolloMorado.png");
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 100% 100%;
+        object-fit: cover;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .--bgAuditoriaColor {
+        background-image: url("../assets/img/auditoriasAzul.png");
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 100% 100%;
+        object-fit: cover;
+
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .--bgConsultoria {
+      background-image: url("../assets/img/consultoriaServices.png");
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+      object-fit: cover;
+    }
+
+    .--bgDesarrollo {
+      background-image: url("../assets/img/desarrolloServices.png");
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+      object-fit: cover;
+    }
+
+    .--bgAuditoria {
+      background-image: url("../assets/img/auditoriaServices.png");
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// @media (max-width: 1200px) {
+//   .component-nuestros-services {
+//     font-size: 11px;
+//   }
+// }
+
+@media (max-width: 1200px) {
+  .component-nuestros-services {
+    font-size: 11px;
+
+    .container-collage-img {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .component-nuestros-services {
+    font-size: 11px;
+
+    .container-collage-img {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .component-nuestros-services {
+    font-size: 11px;
+    padding: 9em 1em 13em 1em;
+
+    .container-collage-img {
+      width: 95%;
+      justify-content: center;
+
+      .container-img-text {
+        width: 25em;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@use "_variables";
+
+.component-proceso-desarrollo {
+  * {
+    font-family: variables.$fontPoppins;
+    color: #616161;
+  }
+  font-size: 16px;
+  text-align: center;
+  margin: 5em 0;
+  padding: 0 4em;
+
+  .title-proceso {
+    color: #692060;
+    font-size: 2em;
+  }
+
+  .text-proceso {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-top: 1em;
+    padding: 0 4em;
+  }
+
+  .container-map {
+    margin-top: 6em;
+    display: flex;
+
+    .container {
+      text-align: start;
+      width: 24%;
+      .container-img {
+        width: 80%;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+      }
+
+      .title {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .proceso1 {
+        color: #d71c5a;
+      }
+      .proceso2 {
+        color: #1455cb;
+      }
+      .proceso3 {
+        color: #9f1f5e;
+      }
+      .proceso4 {
+        color: #1d24b3;
+      }
+      .proceso5 {
+        color: #692060;
+      }
+      .proceso6 {
+        color: #0089ff;
+      }
+      .proceso7 {
+        color: #292067;
+      }
+      .proceso8 {
+        color: #ff445b;
+      }
+      .description {
+        margin-top: 1em;
+        line-height: 1.5em;
+      }
+    }
+
+    .container:nth-child(even) {
+      margin-top: 8em;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .component-proceso-desarrollo {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .component-proceso-desarrollo {
+    font-size: 11px;
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .component-proceso-desarrollo {
+    font-size: 11px;
+
+    .text-proceso {
+      padding: 0 2em;
+    }
+
+    .container-map {
+      margin-top: 6em;
+      display: flex;
+
+      .container {
+        width: 45%;
+        margin-bottom: 2.5em;
+        .container-img {
+          width: 80%;
+          margin: auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .container:nth-child(even) {
+        margin-top: 0em;
+      }
+    }
+  }
+}
